@@ -1,0 +1,33 @@
+/* SKILLS */
+#skills {
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blueGray4);
+}
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills-image {
+  font-size: 4em;
+  height: 70px;
+  width: calc(100% / 5 - 20px);
+  min-width: 110px;
+  flex-grow: 1;
+  /* object-fit: contain; */
+  text-align: center;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  transition: filter 0.4s linear;
+  color: #ffc107;
+  fill: #ffc107;
+  margin: 10px;
+  box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+}
+.skills-image:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
