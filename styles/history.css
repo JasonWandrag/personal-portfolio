@@ -30,6 +30,9 @@
   margin: 2%;
   box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
 }
+.timeline-section ul {
+  list-style-type: none;
+}
 .timeline-section:nth-of-type(1) {
   grid-area: first;
 }
