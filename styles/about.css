@@ -25,11 +25,11 @@
 @keyframes changeBG {
   0%,
   100% {
-    background-image: url(../images/fire-breathing.jpg);
+    background-image: url(../images/fire-breathing-min.jpg);
     border-radius: 81% 19% 70% 30% / 38% 60% 40% 62%;
   }
   50% {
-    background-image: url(../images/fire-breathing-2.jpg);
+    background-image: url(../images/fire-breathing-2-min.jpg);
     border-radius: 43% 57% 65% 35% / 80% 18% 82% 20%;
   }
   /* 60% {
