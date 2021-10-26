@@ -1,0 +1,166 @@
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  object-fit: cover;
+}
+/* Carousel Element */
+#carousel {
+  display: grid;
+  grid-template-columns: 30px 70vw 30px;
+  grid-template-rows: 15fr 1fr;
+  grid-template-areas:
+    "leftCaret content rightCaret"
+    "......... bullets ..........";
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+/* Carousel Carets */
+#carousel #carousel-left,
+#carousel #carousel-right {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 4em;
+  color: grey;
+  transition: all 0.2s linear;
+}
+#carousel #carousel-left:hover,
+#carousel #carousel-right:hover {
+  color: var(--blueGray1);
+}
+/* Carousel Grid Item Positioning */
+#carousel #carousel-left {
+  grid-area: leftCaret;
+}
+#carousel #carousel-right {
+  grid-area: rightCaret;
+}
+#carousel #carousel-container {
+  grid-area: content;
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+}
+#carousel #carousel-bullets {
+  grid-area: bullets;
+}
+/* Carousel Bullet Styles */
+#carousel-bullets .carousel-bullet {
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  padding: 2px;
+  cursor: pointer;
+}
+#carousel #carousel-bullets .fas.fa-circle {
+  transition: all 0.2s linear;
+}
+#carousel #carousel-bullets .fas.fa-circle.active {
+  color: grey;
+}
+/* Carousel Slide Styles */
+.carousel-slide {
+  opacity: 0;
+  z-index: -2;
+  transition: opacity 0.4s linear;
+  position: fixed;
+  top: -100%;
+  padding: 15%;
+}
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 1;
+  position: relative;
+  top: 0;
+  height: 100%;
+  box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+  /* max-height: 80vh; */
+}
+
+.carousel-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.carousel-content {
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.carousel-content h3 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.carousel-content a {
+  text-decoration: none;
+}
+
+.carousel-btns {
+  width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+  #carousel {
+    grid-template-columns: 1fr;
+    grid-template-rows: 90% 10%;
+    grid-template-areas:
+      "content"
+      "carets";
+  }
+
+  #carousel #carousel-left {
+    grid-area: carets;
+    justify-self: start;
+  }
+  #carousel #carousel-right {
+    grid-area: carets;
+    justify-self: end;
+  }
+  #carousel #carousel-bullets {
+    grid-area: carets;
+    /* display: none; */
+  }
+  .carousel-slide {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 30px;
+  }
+  .carousel-slide.active {
+    height: fit-content;
+  }
+  .carousel-img {
+    position: relative;
+    top: unset;
+    right: unset;
+    bottom: unset;
+    left: unset;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+
+  .carousel-content {
+    height: fit-content;
+  }
+}

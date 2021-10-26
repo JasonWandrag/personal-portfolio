@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/landing.css" />
     <link rel="stylesheet" href="./styles/about.css" />
     <link rel="stylesheet" href="./styles/history.css" />
+    <link rel="stylesheet" href="./styles/projects.css" />
     <link rel="stylesheet" href="./styles/skills.css" />
     <link rel="stylesheet" href="./styles/contact.css" />
     <!-- Script Imports -->
@@ -34,6 +35,9 @@
           <a onclick="toggleNav()" href="#history">History</a>
         </li>
         <li class="nav-link">
+          <a onclick="toggleNav()" href="#projects">Projects</a>
+        </li>
+        <li class="nav-link">
           <a onclick="toggleNav()" href="#skills">Skills</a>
         </li>
         <li class="nav-link">
@@ -44,6 +48,30 @@
         <i class="fas fa-bars"></i>
       </button>
     </nav>
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a
+        class="social-icon"
+        target="_blank"
+        href="https://github.com/JasonWandrag"
+        ><i class="fab fa-github"></i
+      ></a>
+      <a
+        class="social-icon"
+        target="_blank"
+        href="https://codepen.io/Chryptolite"
+        ><i class="fab fa-codepen"></i
+      ></a>
+      <a class="social-icon" target="_blank" href="https://chryptolite.itch.io/"
+        ><i class="fab fa-itch-io"></i
+      ></a>
+      <a
+        class="social-icon"
+        target="_blank"
+        href="https://www.linkedin.com/in/jason-wandrag-004b1512b/"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+    </div>
     <div class="content" id="home">
       <!-- MAIN CONTENT -->
       <main>
@@ -65,13 +93,17 @@
           <div data-aos="fade-right">
             <h2 class="section-heading">About Me</h2>
             <p>
-              I am a South African Frontend Developer and Lecturer. I enjoy
-              solving complex problems, and share knowledge with like minded
-              people.
+              I am a South African Fullstack Developer, Lecturer and Consultant.
+              I enjoy solving complex problems, and share knowledge with like
+              minded people.
+            </p>
+            <p>
+              I am also an avid gamer, and as such, I have started game
+              development with Godot.
             </p>
             <p>
               In my spare time you will find me gardening, playing 5s football
-              and being a hands on dad. I have also been known to breath fire.
+              and being a hands-on dad. I have also been known to breath fire.
             </p>
           </div>
           <div class="portfolio-image" data-aos="fade-left"></div>
@@ -81,6 +113,26 @@
           <h2 class="section-heading">Work History</h2>
           <div class="timeline">
             <div class="line"></div>
+            <div class="timeline-section" data-aos="fade-right">
+              <h4>2019</h4>
+              <h6>NuDynamics - Junior Developer</h6>
+              <p>My duties were:</p>
+              <ul>
+                <li>
+                  Create the front end interface to MTO Website using React from
+                  design specs
+                </li>
+              </ul>
+            </div>
+            <div class="timeline-section" data-aos="fade-left">
+              <h4>2018</h4>
+              <h6>Braxton - Junior Developer</h6>
+              <p>My duties were:</p>
+              <ul>
+                <li>Create software components using Angular</li>
+                <li>Update and maintain legacy code</li>
+              </ul>
+            </div>
             <div class="timeline-section" data-aos="fade-right">
               <h4>2016-2017</h4>
               <h6>JNZ Group - Intern Developer</h6>
@@ -99,26 +151,6 @@
               </ul>
             </div>
             <div class="timeline-section" data-aos="fade-left">
-              <h4>2018</h4>
-              <h6>Braxton - Junior Developer</h6>
-              <p>My duties were:</p>
-              <ul>
-                <li>Create software components using Angular</li>
-                <li>Update and maintain legacy code</li>
-              </ul>
-            </div>
-            <div class="timeline-section" data-aos="fade-right">
-              <h4>2019</h4>
-              <h6>NuDynamics - Junior Developer</h6>
-              <p>My duties were:</p>
-              <ul>
-                <li>
-                  Create the front end interface to MTO Website using React from
-                  design specs
-                </li>
-              </ul>
-            </div>
-            <div class="timeline-section" data-aos="fade-left">
               <h4>2020-Present</h4>
               <h6>Life Choices - Intermediate Developer / Lecturer</h6>
               <p>My duties are:</p>
@@ -128,6 +160,24 @@
                 <li>Develop end-to-end solutions for clients</li>
               </ul>
             </div>
+          </div>
+        </section>
+        <!-- Projects Section -->
+        <section id="projects">
+          <h2 class="section-heading">projects</h2>
+          <!-- Carousel -->
+          <div id="carousel">
+            <!-- Carousel Container -->
+            <div id="carousel-container"></div>
+            <!-- Carousel Bullets -->
+            <div id="carousel-bullets"></div>
+            <!-- Carousel Buttons -->
+            <button id="carousel-left" onclick="changeSlide(-1)">
+              <i class="fas fa-angle-left"></i>
+            </button>
+            <button id="carousel-right" onclick="changeSlide(1)">
+              <i class="fas fa-angle-right"></i>
+            </button>
           </div>
         </section>
         <!-- Skills Section -->
@@ -315,6 +365,7 @@
     </div>
     <!-- Script Imports -->
     <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/projects.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
