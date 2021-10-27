@@ -1,4 +1,4 @@
-/* Variables */
+/* Color gradient */
 :root {
   --blueGray1: #191923;
   --blueGray2: #212125;
@@ -16,6 +16,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+/* Typography text shadow */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+button {
+  text-shadow: 3px 3px 10px black;
 }
 html,
 body {
