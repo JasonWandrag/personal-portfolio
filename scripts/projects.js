@@ -36,6 +36,15 @@ const projects = [
     github: "https://github.com/JasonWandrag/basic-platformer",
     live: "https://chryptolite.itch.io/basic-platformer",
   },
+  {
+    title: "Full page timeline",
+    desc: "Mobile responsive fullpage timeline",
+    stack: "HTML/CSS",
+    img: "./images/Fullpage_timeline.png",
+    img_alt: "Fullpage Timeline",
+    github: "https://github.com/JasonWandrag/fullpage-experience-resume",
+    live: "https://fullpage-timeline.netlify.app/",
+  },
 ];
 
 const totalSlides = projects.length;
@@ -52,8 +61,12 @@ function createSlide(project, index) {
                 <h4>Made with: ${project.stack}</h4>
                 <p>${project.desc}</p>
                 <div class="carousel-btns">
-                    <a class="form-submit" href="${project.live}">Live</a>
-                    <a class="form-submit" href="${project.github}">Github</a>
+                    <a class="form-submit" target="_blank" href="${
+                      project.live
+                    }">Live</a>
+                    <a class="form-submit" target="_blank" href="${
+                      project.github
+                    }">Github</a>
                 </div>
             </div>
             <img class="carousel-img" src=${project.img} alt=${
