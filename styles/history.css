@@ -67,24 +67,33 @@
 
 .timeline-modal {
   position: fixed;
-  top: -1000%;
+  top: -100%;
   left: 0;
   width: 100%;
   height: 100%;
-  transform: translate(-10px, -10px);
+  transform: translate(-11px, -11px);
   /* display: none; */
-  transition: top 0.3s linear;
+  transition: all 0.3s linear;
+  z-index: -20;
+  opacity: 0;
 }
 
 .timeline-modal.active {
   /* display: flex; */
   top: 0;
+  opacity: 1;
+  z-index: 1;
 }
 
 .timeline-modal-button {
   position: fixed;
   top: 10px;
   right: 10px;
+  background-color: var(--blueGray9);
+  border: none;
+  outline: none;
+  color: white;
+  padding: 5px;
 }
 
 .timeline-section .timeline-btn {
