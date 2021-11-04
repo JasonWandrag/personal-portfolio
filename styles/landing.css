@@ -34,10 +34,11 @@
 .landing-profile {
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
-  /* margin-top: -30px; */
   margin-left: -10%;
   align-self: flex-end;
   height: 110%;
+  width: 70%;
+  max-width: 600px;
 }
 #landing a {
   text-decoration: none;

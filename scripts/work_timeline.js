@@ -5,10 +5,10 @@ const career_timeline = [
     company: {
       name: "Life Choices",
       description:
-        "An NPO focused on challenging inequality by investing in youth",
+        "An NPO focused on challenging inequality by investing in youth. My job was focused around training youth and helping them find sustainable jobs",
       reference: {
-        name: "Oslin Johnson",
-        position: "LC Studio Team Lead",
+        name: "Godwin Dzvapatsva",
+        position: "Head of Curriculum",
         number: "071 248 2443",
       },
     },
@@ -186,16 +186,31 @@ function createWorkCard(work, index) {
   const direction = index % 2 !== 0 ? "left" : "right";
   document.getElementById("timeline").innerHTML += `
     <div class="timeline-section timeline-${direction}" data-aos="fade-${direction}">
-        <p class="timeline-period">${work.year}</p>
+        <p class="timeline-header">${work.year}</p>
         <div class="timeline-content">
           <h4 class="timeline-title">${
             work.company.name
           } - <span class="timeline-role">${work.role}</span></h4>
           <p class="timeline-description">${work.company.description}</p>
           <h6 class="timeline-heading">My Accomplishments:</h6>
-          <ol>
-            ${createAccomplishments(work.accomplishments)}
-          </ol>
+          <ul>
+          ${createAccomplishments(work.accomplishments)}
+          </ul>
+          <button class="timeline-btn form-submit" onclick="toggleReferenceModal(${index})">Reference</button>
+        </div>
+        <div timeline-modal="${index}" class="timeline-modal">
+            <p class="timeline-header">Reference<p>
+            <div class="timeline-content">
+              <h4 class="timeline-title">${
+                work.company.reference.name
+              } - <span class="timeline-role">${
+    work.company.reference.position
+  }</span></h4>
+              <p class="timeline-description">${
+                work.company.reference.number
+              }</p>
+            </div>
+            <button class="timeline-modal-button" onclick="toggleReferenceModal(${index})">x</button>
         </div>
     </div>
   `;
@@ -207,6 +222,12 @@ function createAccomplishments(accomplishments) {
     a += `<li>${acc}</li>`;
   });
   return a;
+}
+
+function toggleReferenceModal(index) {
+  document
+    .querySelector(`[timeline-modal="${index}"]`)
+    .classList.toggle("active");
 }
 
 career_timeline.forEach((work, i) => createWorkCard(work, i));
