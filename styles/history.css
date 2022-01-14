@@ -34,6 +34,7 @@
   text-align: center;
   padding: 20px;
   background-color: var(--blueGray4);
+  text-transform: uppercase;
 }
 
 .timeline-content {
@@ -108,6 +109,9 @@
     height: fit-content;
     flex-direction: column;
     width: 100%;
+  }
+  .timeline-modal.active {
+    height: 100%;
   }
   .timeline-section:nth-of-type(even) {
     text-align: left;

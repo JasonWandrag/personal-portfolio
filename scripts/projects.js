@@ -45,7 +45,31 @@ const projects = [
     github: "https://github.com/JasonWandrag/fullpage-experience-resume",
     live: "https://fullpage-timeline.netlify.app/",
   },
+  {
+    title: "Bootstrap Point Of Sale",
+    desc: "Simple POS using localStorage as the storage method",
+    stack: "HTML/CSS/JS",
+    img: "./images/Point_of_sale.JPG",
+    img_alt: "Point Of Sale",
+    github: "https://github.com/JasonWandrag/product-crud",
+    live: "https://jason-wandrag-pos.netlify.app/",
+  },
+  {
+    title: "Trivia Game",
+    desc: "Trivia game created with the trivia API",
+    stack: "HTML/CSS/JS",
+    img: "./images/Trivia.JPG",
+    img_alt: "Point Of Sale",
+    github: "https://github.com/JasonWandrag/trivia",
+    live: "https://jason-trivia-game.netlify.app/",
+  },
 ];
+
+console.log(projects);
+
+for (let i = 0; i < projects.length; i++) {
+  console.log(projects[i].title);
+}
 
 const totalSlides = projects.length;
 // Get HTML containers to add elements to
