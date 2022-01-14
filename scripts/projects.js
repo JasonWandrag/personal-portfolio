@@ -63,6 +63,15 @@ const projects = [
     github: "https://github.com/JasonWandrag/trivia",
     live: "https://jason-trivia-game.netlify.app/",
   },
+  {
+    title: "Hecates Digital Tarot",
+    desc: "Work In progress: Creating a digital tarot with multiple spreads",
+    stack: "HTML/CSS/JS",
+    img: "./images/Digital_Tarot.JPG",
+    img_alt: "Point Of Sale",
+    github: "https://github.com/JasonWandrag/digital-tarot",
+    live: "https://jason-digital-tarot.netlify.app/",
+  },
 ];
 
 console.log(projects);
