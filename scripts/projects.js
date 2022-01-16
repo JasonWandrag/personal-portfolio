@@ -64,8 +64,8 @@ const projects = [
     live: "https://jason-trivia-game.netlify.app/",
   },
   {
-    title: "Hecates Digital Tarot",
-    desc: "Work In progress: Creating a digital tarot with multiple spreads",
+    title: "Rider Waite Digital Tarot",
+    desc: "Digital Tarot generator with multiple spreads",
     stack: "HTML/CSS/JS",
     img: "./images/Digital_Tarot.JPG",
     img_alt: "Point Of Sale",
