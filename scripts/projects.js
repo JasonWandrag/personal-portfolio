@@ -72,9 +72,25 @@ const projects = [
     github: "https://github.com/JasonWandrag/digital-tarot",
     live: "https://jason-digital-tarot.netlify.app/",
   },
+  {
+    title: "Rider Waite Digital Tarot",
+    desc: "Digital Tarot generator with multiple spreads",
+    stack: "HTML/CSS/JS",
+    img: "./images/Digital_Tarot.JPG",
+    img_alt: "Point Of Sale",
+    github: "https://github.com/JasonWandrag/digital-tarot",
+    live: "https://jason-digital-tarot.netlify.app/",
+  },
+  {
+    title: "Fake Store",
+    desc: "A Vue project that is a PWA, so it can be installed to your local machine. Here I also focused more on design. It is still unfinished (Started 01/31/2021)",
+    stack: "Vue.js",
+    img: "./images/Fake_Store.JPG",
+    img_alt: "Fake Store",
+    github: "https://github.com/JasonWandrag/vue-ecommerce",
+    live: "https://vue-fake-store.netlify.app/",
+  },
 ];
-
-console.log(projects);
 
 for (let i = 0; i < projects.length; i++) {
   console.log(projects[i].title);
