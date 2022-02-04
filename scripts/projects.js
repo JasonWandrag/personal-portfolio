@@ -73,15 +73,6 @@ const projects = [
     live: "https://jason-digital-tarot.netlify.app/",
   },
   {
-    title: "Rider Waite Digital Tarot",
-    desc: "Digital Tarot generator with multiple spreads",
-    stack: "HTML/CSS/JS",
-    img: "./images/Digital_Tarot.JPG",
-    img_alt: "Point Of Sale",
-    github: "https://github.com/JasonWandrag/digital-tarot",
-    live: "https://jason-digital-tarot.netlify.app/",
-  },
-  {
     title: "Fake Store",
     desc: "A Vue project that is a PWA, so it can be installed to your local machine. Here I also focused more on design. It is still unfinished (Started 01/31/2021)",
     stack: "Vue.js",
@@ -89,6 +80,15 @@ const projects = [
     img_alt: "Fake Store",
     github: "https://github.com/JasonWandrag/vue-ecommerce",
     live: "https://vue-fake-store.netlify.app/",
+  },
+  {
+    title: "User List",
+    desc: "I challenged myself to create a fully Vanilla, web friendly list. Take a look at the Github read me for more detailsREA",
+    stack: "HTML/CSS/JS",
+    img: "./images/User_List.JPG",
+    img_alt: "User List",
+    github: "https://github.com/JasonWandrag/vanilla-user-search",
+    live: "https://im-proud-of-this.netlify.app/",
   },
 ];
 
