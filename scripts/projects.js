@@ -106,7 +106,7 @@ const projects = [
     img: "./images/Generic_Blog_API.JPG",
     img_alt: "Generic Blog",
     github: "https://github.com/JasonWandrag/generic_blog_api",
-    live: "https://generic-vue-blog.netlify.app/",
+    live: "https://generic-blog-api.herokuapp.com/",
   },
 ];
 
