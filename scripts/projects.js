@@ -83,12 +83,30 @@ const projects = [
   },
   {
     title: "User List",
-    desc: "I challenged myself to create a fully Vanilla, web friendly list. Take a look at the Github read me for more detailsREA",
+    desc: "I challenged myself to create a fully Vanilla, web friendly list. Take a look at the Github read me for more details",
     stack: "HTML/CSS/JS",
     img: "./images/User_List.JPG",
     img_alt: "User List",
     github: "https://github.com/JasonWandrag/vanilla-user-search",
     live: "https://im-proud-of-this.netlify.app/",
+  },
+  {
+    title: "Generic Blog Frontend",
+    desc: "I created this project to show students how to create the frontend for a MEVN-stack project",
+    stack: "Vue.js",
+    img: "./images/Generic_Blog.JPG",
+    img_alt: "Generic Blog",
+    github: "https://github.com/JasonWandrag/Generic-Blog-Vue",
+    live: "https://generic-vue-blog.netlify.app/",
+  },
+  {
+    title: "Generic Blog Backend",
+    desc: "The backend for the MEVN stack blog. This is a RESTful api that includes password encryption and authorization with bcrypt, as well as authentication using JWT",
+    stack: "MongoDB, Node.js, Express, JWT, bcrypt",
+    img: "./images/Generic_Blog_API.JPG",
+    img_alt: "Generic Blog",
+    github: "https://github.com/JasonWandrag/generic_blog_api",
+    live: "https://generic-vue-blog.netlify.app/",
   },
 ];
 
